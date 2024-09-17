@@ -688,9 +688,172 @@ body{
     margin-bottom: 92px;
 }
 
-.slider{
-    height: 496px;
-    border: 1px solid black;
+
+.slider {
+    position: relative;
+    overflow: hidden;
+
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
 }
+.slides {
+    height: 496px;
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.slide-content{
+    text-align: center;
+    margin-top: 100px;
+}
+.slide img{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.prev {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 39.5px);
+    z-index: 1;
+    box-sizing: border-box;
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(241, 147, 192, 0.65) 0%, rgba(213, 188, 228, 0.65) 100%);
+    border: none;
+}
+.next {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 39.5px);
+    z-index: 1;
+
+    box-sizing: border-box;
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(241, 147, 192, 0.65) 0%, rgba(213, 188, 228, 0.65) 100%);
+    border: none;
+}
+.prev:focus,
+.next:focus{
+    background-color: #4F378B12;
+}
+.slide-name{
+    font-family: 'Circe-Bold',sans-serif;
+    font-size: 24px;
+    color: #3D3D3D;
+    margin-bottom: 20px;
+}
+.slide-desc{
+    font-family: 'Lato-Regular',sans-serif;
+    font-size: 18px;
+    color: #3D3D3D;
+    margin-bottom: 27px;
+}
+.slide-text{
+    margin: 0 auto;
+    max-width: 648px;
+}
+
+/*buy*/
+.buy {
+    max-width: 1188px;
+    margin: 0 auto 144px auto;
+
+    height: 417px;
+    background: #485D56;
+    background: url("../img/buy-image.webp") no-repeat center center / cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buy-title{
+    font-family: 'Circe-Bold',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+    max-width: 806px;
+    margin-bottom: 87px;
+}
+.buy-button{
+    border: none;
+    width: 166px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    font-family: 'Inter-Medium',sans-serif;
+
+    font-size: 20px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+/*questions*/
+
+.questions{
+    max-width: 1188px;
+    margin: 0 auto 194px auto;
+}
+.questions-title{
+    margin: 0 0 78px auto
+}
+.accordion{
+    border: 1px solid black;
+    height: 700px;
+}
+
+
+
+/*footer*/
+
+.footer{
+    max-width: 1230px;
+    height: 286px;
+    margin: 0 auto 20px auto;
+    background: linear-gradient(90deg, rgba(241, 147, 192, 0.65) 0%, rgba(223, 177, 218, 0.65) 25%, rgba(222, 177, 217, 0.65) 50%, rgba(230, 167, 208, 0.65) 75%, rgba(213, 188, 228, 0.65) 100%);
+    border-radius: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

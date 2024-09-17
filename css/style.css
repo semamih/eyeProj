@@ -46,7 +46,27 @@ body{
     /*max-width: 1200px;*/
     margin: 0 auto;
 }
-
+.main{
+    position: relative;
+}
+.spot-1{
+    position: absolute;
+    left: 0;
+    top: 2800px;
+    z-index: -999;
+}
+.spot-2{
+    position: absolute;
+    right: 0;
+    top: 4300px;
+    z-index: -999;
+}
+.spot-3{
+    position: absolute;
+    left: 0;
+    top: 7000px;
+    z-index: -999;
+}
 /*header*/
 
 .header{
@@ -235,7 +255,7 @@ body{
 
 /*conditions*/
 
-.conditions{
+.conditions {
     max-width: 1188px;
     margin: 0 auto;
     display: flex;
@@ -820,12 +840,74 @@ body{
 .questions-title{
     margin: 0 0 78px auto
 }
-.accordion{
-    border: 1px solid black;
-    height: 700px;
+.accordions{
+    height: 750px;
+}
+.accordion {
+    margin-bottom: 14px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px;
+    height: 88px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+
+    font-family: 'Lato-Bold',sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #3D3D3D;
 }
 
+.active, .accordion:hover {
+    background-color: #e8e8e8;
+}
 
+/*.panel {*/
+/*    display: none;*/
+/*    padding: 18px;*/
+/*    border-radius: 20px;*/
+/*    margin-bottom: 14px;*/
+/*    background-color: white;*/
+/*    min-height: 40px;*/
+/*    overflow: hidden;*/
+/*    transition: display 0.2s ease-out;*/
+/*}*/
+.panel {
+    max-height: 0;
+    padding: 0 18px;
+    margin-bottom: 14px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out , padding 0.3s ease-out;
+}
+.panel.show {
+    min-height: 40px;
+    max-height: 200px;
+    padding: 18px;
+}
+.accordion:after {
+    content: url("../img/down.svg");
+    float: right;
+    transition: transform 0.4s ease;
+}
+.accordion.active:after {
+    transform: rotate(180deg);
+}
+
+.panel p{
+    font-family: 'Lato-Bold',sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #3D3D3D;
+}
 
 /*footer*/
 

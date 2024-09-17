@@ -74,6 +74,33 @@ document.querySelector('.feedbackLink-2').addEventListener('click', (event) => s
 document.querySelector('.questionsLink').addEventListener('click', (event) => scrollToSection(event, 'questions'));
 document.querySelector('.questionsLink-2').addEventListener('click', (event) => scrollToSection(event, 'questions'));
 
+let acc = document.getElementsByClassName("accordion");
+let panels = document.querySelectorAll('.panel');
+
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener('click', () => {
+        // Закрытие всех панелей
+        for (let j = 0; j < panels.length; j++) {
+            if (j !== i) {
+                panels[j].classList.remove('show');
+                acc[j].classList.remove('active');
+            }
+        }
+
+        // Открытие выбранной панели
+        if (!panels[i].classList.contains('show')) {
+            panels[i].classList.add('show');
+            acc[i].classList.add('active');
+        } else {
+            panels[i].classList.remove('show');
+            acc[i].classList.remove('active');
+        }
+    });
+}
+
+
+
+
 
 
 

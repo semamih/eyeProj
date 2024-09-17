@@ -41,9 +41,9 @@ html, :has(:target) {
 body{
     background: url("../img/bg.webp") no-repeat center center / cover;
     font-family: Circle-Regular,sans-serif;
+    overflow-x: hidden;
 }
 .container{
-    /*max-width: 1200px;*/
     margin: 0 auto;
 }
 .main{
@@ -57,7 +57,7 @@ body{
 }
 .spot-2{
     position: absolute;
-    right: 0;
+    right: -10px;
     top: 4300px;
     z-index: -999;
 }

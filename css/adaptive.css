@@ -1002,7 +1002,17 @@
     .menu-item-link{
         font-size: 13px;
     }
-
+    .about-title {
+        font-size: 16px;
+    }
+    .white-1 {
+        width: 165%;
+    }
+    .preAbout {
+        padding-left: 65px;
+        padding-top: 61px;
+        height: 250px;
+    }
 
 }
 @media screen and (max-width: 550px){

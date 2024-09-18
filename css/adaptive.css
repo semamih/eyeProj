@@ -1187,7 +1187,155 @@
     .burger{
         width: 100px;
     }
+    .about-title {
+        font-size: 14px;
+    }
+    .about-text {
+        max-width: 640px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .white-1 {
+        width: 190%;
+    }
+    .about{
+        overflow: hidden;
+    }
+    .preAbout {
+        padding-left: 62px;
+        padding-top: 56px;
+    }
+    .postAbout-item-video {
+        width: 100%;
+        height: 250px;
+    }
+    .conditions-title, .result-title {
+        text-align: center;
+        font-size: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .conditions-describe img {
+        width: 185%;
+    }
+    .result-describe img {
+        width: 180%;
+    }
+    .speaker-name{
+        font-size: 14px;
+    }
+    .speaker-text {
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .speaker-2 .speaker-text {
+        max-width: 320px;
+        font-size: 10px;
+        line-height: 11px;
+        margin-bottom: 5px;
+    }
+    .speaker-2 .speaker-info {
+        padding-left: 35px;
+    }
+    .more > img {
+        width: 200%;
+    }
+    .more-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .more-social-desc {
+        font-size: 13px;
+    }
+    .more-social img {
+        width: 25px;
+        height: 25px;
+    }
+    .speaker-2 {
+        margin-bottom: 105px;
+    }
+    .howCreat-title, .howWork-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .howCreat-text {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .howCreat{
+        padding-top: 151px;
+    }
+    .howWork-desc, .howWork-ol {
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .howWork {
+        padding-top: 166px;
+    }
+    .howWork > img {
+        width: 140%;
+    }
+    .howWork {
+        padding-top: 117px;
+        height: 401px;
+    }
+    .slides {
+        height: 310px;
+    }
+    .slide-content {
+        margin-top: 75px;
+    }
+    .slide-name {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .slide-desc {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .slide-text {
+        font-size: 10px;
+        line-height: 11px;
+        max-width: 286px;
+    }
+    .buy{
+        margin-top: 140px;
+    }
 
+    .buy-title{
+        line-height: 35px;
+        margin-bottom: 40px;
+    }
+    .next{
+        width: 40px;
+        height: 40px;
+        top: unset;
+        bottom: 0;
+        right: calc(50% - 70px);
+    }
+    .prev{
+        width: 40px;
+        height: 40px;
+        top: unset;
+        bottom: 0;
+        left:  calc(50% - 70px);
+    }
+    .slide img {
+        width: 108%;
+    }
+    .footer{
+        height: 280px;
+        padding: 5px 15px;
+    }
+    .footer .menu-items {
+        column-gap: 8px;
+    }
+    .footer .menu-item-link{
+        font-size: 10px;
+    }
+    .line {
+        margin-top: 20px;
+        margin-bottom: 20px;
 }
 @media screen and (max-width: 425px){
     .logo{

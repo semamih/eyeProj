@@ -117,7 +117,7 @@ burger.onclick = function() {
     }, 220);
     logo.style.display = 'none';
     headerButton.style.display = 'none';
-    header.classList.add('active');
+    header.classList.add('active-menu');
 }
 closeMenu.onclick = function() {
     burger.style.display = 'flex';
@@ -126,7 +126,7 @@ closeMenu.onclick = function() {
     headerMenu.style.display = 'none';
     logo.style.display = 'flex';
     headerButton.style.display = 'flex';
-    header.classList.remove('active');
+    header.classList.remove('active-menu');
 }
 
 

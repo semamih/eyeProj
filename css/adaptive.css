@@ -673,6 +673,10 @@
     }
 }
 @media screen and (max-width: 820px){
+    .about-banner {
+        width: 100%;
+        margin-bottom: 50px;
+    }
     .white-1 {
         width: 103%;
         position: absolute;
@@ -953,10 +957,82 @@
     }
 }
 @media screen and (max-width: 768px){
+    .logo{
+        width: 109px;
+        height: 44px;
+    }
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+    .header .logo{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    .burger{
+        width: 100px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: none;
+        background-color: transparent;
+        border-radius: 50%;
+    }
+    .header .menu{
+        display: none;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease;
+
+    }
+
+    .header .menu.show{
+        opacity: 1;
+        visibility: visible;
+
+    }
+    .menu-items{
+        row-gap: 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 8px;
+    }
+    .menu-item-link{
+        font-size: 13px;
+    }
 
 
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 550px){
+    .header{
+        /*justify-content: center;*/
+    }
+    .close-menu-container{
+        width: 48px;
+    }
+    .burger{
+        width: 100px;
+    }
 
+}
+@media screen and (max-width: 425px){
+    .logo{
+        width: 91px;
+        height: 38px;
+    }
+    .header-button,.burger{
+        width: 80px;
+        font-size: 12px;
+    }
 
+}
+@media screen and (max-width: 375px){
+    .header-button,.burger{
+        width: 65px;
+        font-size: 10px;
+    }
 }

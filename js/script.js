@@ -98,6 +98,37 @@ for (let i = 0; i < acc.length; i++) {
     });
 }
 
+// Burger
+let burger = document.querySelector('.burger');
+let closeMenu = document.querySelector('.close-menu');
+let menu = document.querySelector('.close-menu-container');
+let headerMenu = document.getElementById("menu");
+let logo = document.getElementById('logo');
+let headerButton = document.querySelector('.header-button');
+let header = document.querySelector('.header');
+
+burger.onclick = function() {
+    burger.style.display = 'none';
+    menu.style.display = 'flex';
+    closeMenu.style.display = 'flex';
+    setTimeout(() => {
+        headerMenu.style.display = 'flex';
+        headerMenu.classList.add('show');
+    }, 220);
+    logo.style.display = 'none';
+    headerButton.style.display = 'none';
+    header.classList.add('active');
+}
+closeMenu.onclick = function() {
+    burger.style.display = 'flex';
+    menu.style.display = 'none';
+    closeMenu.style.display = 'none';
+    headerMenu.style.display = 'none';
+    logo.style.display = 'flex';
+    headerButton.style.display = 'flex';
+    header.classList.remove('active');
+}
+
 
 
 

@@ -212,10 +212,17 @@ html{
     height: 286px;
     position: relative;
 }
-.postAbout-item-title,
-.conditions-item-title,
-.result-item-title{
+.postAbout-item-title{
     font-family: 'Circle-Bold',sans-serif;
+}
+.conditions-item-title{
+    font-family: 'Circle-Bold',sans-serif;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 18px;
+}
+.result-item-title{
+    font-family: "Inter-SemiBold",sans-serif;
     font-size: 24px;
     color: #000000;
     margin-bottom: 18px;

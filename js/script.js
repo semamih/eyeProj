@@ -30,7 +30,7 @@ showSlide(currentIndex);
 
 // Функция для плавного скролла
 function scrollToSectionCenter(event, sectionId) {
-    // event.preventDefault();
+    event.preventDefault();
     const section = document.getElementById(sectionId);
     section.scrollIntoView({
         behavior: 'smooth',
@@ -38,7 +38,7 @@ function scrollToSectionCenter(event, sectionId) {
     });
 }
 function scrollToSection(event, sectionId) {
-    // event.preventDefault();
+    event.preventDefault();
     const section = document.getElementById(sectionId);
 
     // Прокрутить секцию в видимую область

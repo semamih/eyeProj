@@ -42,6 +42,7 @@ body{
     background: url("../img/bg.webp") no-repeat center center / cover;
     font-family: Circle-Regular,sans-serif;
     margin: 0 auto;
+    position: relative;
 }
 html{
 
@@ -57,6 +58,7 @@ html{
     left: 0;
     top: 2800px;
     z-index: -999;
+    animation: pulse 3s linear infinite;
 }
 .spot-2{
     position: absolute;
@@ -69,6 +71,41 @@ html{
     left: 0;
     top: 7000px;
     z-index: -999;
+    animation: pulse 2s linear infinite;
+}
+@keyframes pulse {
+    0% {
+        opacity: 0.2;
+        transform: scaleX(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scaleX(2);
+    }
+    100% {
+        opacity: 0.2;
+        transform: scaleX(1);
+    }
+}
+@keyframes pulseLinear {
+    0% {
+        transform: scaleX(0);
+        transform-origin:left center;
+    }
+    100% {
+        transform: scaleX(1);
+        transform-origin:left center;
+    }
+}
+@keyframes pulseLinearReverse {
+    0% {
+        transform: scaleX(0);
+        transform-origin:right center;
+    }
+    100% {
+        transform: scaleX(1);
+        transform-origin:right center;
+    }
 }
 .big-video{
     width: 100%;
@@ -81,6 +118,10 @@ html{
     justify-content: flex-start !important;
     transition: height 0.5s ease;
 }
+button{
+    cursor: pointer;
+}
+
 /*header*/
 
 .header{
@@ -91,11 +132,17 @@ html{
     box-sizing: border-box;
     max-width: 1230px;
     height: 85px;
-    margin: 52px auto 68px auto;
+    margin: 0 auto 0 auto;
     background: linear-gradient(90deg, rgba(241, 147, 192, 0.65) 0%, rgba(223, 177, 218, 0.65) 25%, rgba(222, 177, 217, 0.65) 50%, rgba(230, 167, 208, 0.65) 75%, rgba(213, 188, 228, 0.65) 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     padding: 21px 97px 27px 77px;
+
+    position: fixed;
+    z-index: 999;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 10px);
 }
 .logo{
     box-sizing: border-box;
@@ -142,13 +189,15 @@ html{
 
 .video{
     width: 627px;
-    height: 611px;
-    margin: 0 auto;
-    margin-bottom: 80px;
+    height: 906px;
+    margin: 0 auto -93px auto;
     text-align: center;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.video img{
+.video-gif{
+    border: 1px solid black;
     width: 1100px;
     height: 611px;
 }
@@ -214,6 +263,8 @@ html{
 }
 .postAbout-item-title{
     font-family: 'Circle-Bold',sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 .conditions-item-title{
     font-family: 'Circle-Bold',sans-serif;
@@ -319,7 +370,7 @@ html{
     border-radius: 25px;
 
     font-family: 'Circle-Bold',sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
     color: #000000;
@@ -441,7 +492,7 @@ html{
     border-radius: 25px;
 
     font-family: 'Circle-Bold',sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
     color: #000000;
@@ -587,6 +638,23 @@ html{
 }
 .speaker-1 .speaker-text{
     max-width: 557px;
+}
+.speaker-image{
+    position: relative;
+}
+.speaker-1 .speaker-image .linear{
+    left: -20px !important;
+    bottom: -155px !important;
+    position: absolute;
+    width: 105% !important;
+    animation: pulseLinearReverse 4s infinite;
+}
+.speaker-2 .speaker-image .linear{
+    left: 0px !important;
+    bottom: -155px !important;
+    position: absolute;
+    width: 105% !important;
+    animation: pulseLinear 4s infinite;
 }
 .speaker-1 .speaker-image img{
     width: 360px;

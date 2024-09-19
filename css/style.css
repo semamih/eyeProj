@@ -276,6 +276,7 @@ button{
 .result-item-title{
     font-family: "Inter-SemiBold",sans-serif;
     font-size: 24px;
+    font-weight: 700;
     color: #000000;
     margin-bottom: 18px;
 }

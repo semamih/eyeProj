@@ -129,6 +129,20 @@ closeMenu.onclick = function() {
     header.classList.remove('active-menu');
 }
 
+// function changeImageSrc() {
+//     let img = document.querySelector('.white-1');
+//     if (window.innerWidth < 768) {
+//         img.src = 'img/white-7.png';
+//     } else {
+//         img.src = 'img/white-1.webp';
+//     }
+// }
+//
+// // Проверка при загрузке страницы
+// window.onload = changeImageSrc;
+//
+// // Проверка при изменении размера окна
+// window.onresize = changeImageSrc;
 
 
 

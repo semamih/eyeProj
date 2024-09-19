@@ -992,8 +992,15 @@
         display: flex;
         flex-direction: column;
     }
+    .postAbout-item {
+        margin-bottom: 0;
+    }
 }
+
 @media screen and (max-width: 768px){
+    .header{
+        height: 65px;
+    }
     .video{
         height: 600px;
         aspect-ratio: 1 / 1;
@@ -1061,8 +1068,8 @@
     }
     .preAbout {
         padding-left: 65px;
-        padding-top: 61px;
-        height: 250px;
+        padding-top: 200px;
+        height: 600px;
         overflow: hidden;
     }
     .conditions{  /*.result*/
@@ -1225,15 +1232,85 @@
         border-radius: 40px;
         height: 230px;
     }
+    .result-item-info-3 {
+        margin-top: -15px;
+
+    }
+    .result-item-info-4 {
+        margin-bottom: 30px;
+    }
+    .result-item-info-5 {
+        margin-top: 30px;
+    }
+    .white-1 {
+        width: 105%;
+    }
+    .about-text {
+        max-width: 600px;
+    }
+
+}
+@media screen and (max-width: 700px){
+    .white-1 {
+        width: 100%;
+    }
+    .preAbout{
+        height: 400px;
+        padding-top: 80px;
+        padding-left: 130px;
+    }
+    .about-text {
+        max-width: 400px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .about-title {
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 600px){
+    .white-1 {
+        width: 100%;
+    }
+    .preAbout{
+        height: 350px;
+        padding-top: 80px;
+        padding-left: 100px;
+    }
+    .about-text {
+        max-width: 400px;
+        font-size: 14px;
+        line-height: 13px;
+    }
+    .about-title {
+        font-size: 15px;
+    }
+
 }
 @media screen and (max-width: 550px){
+    .white-1 {
+        width: 105%;
+    }
+    .preAbout{
+        height: 300px;
+        padding-top: 40px;
+        padding-left: 60px;
+    }
+    .about-text {
+        max-width: 400px;
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .about-title {
+        font-size: 15px;
+    }
+
+
     .spot-1,
     .spot-2,
     .spot-3{
         width: 150px;
-    }
-    .header{
-        /*justify-content: center;*/
     }
     .close-menu-container{
         width: 48px;
@@ -1241,23 +1318,8 @@
     .burger{
         width: 100px;
     }
-    .about-title {
-        font-size: 14px;
-    }
-    .about-text {
-        max-width: 640px;
-        font-size: 10px;
-        line-height: 15px;
-    }
-    .white-1 {
-        width: 200%;
-    }
     .about{
         overflow: hidden;
-    }
-    .preAbout {
-        padding-left: 62px;
-        padding-top: 56px;
     }
     .postAbout-item-video {
         width: 100%;
@@ -1360,22 +1422,26 @@
         line-height: 35px;
         margin-bottom: 40px;
     }
+
+
     .next{
         width: 40px;
         height: 40px;
-        top: unset;
-        bottom: 0;
-        right: calc(50% - 70px);
+        /*top: unset;*/
+        /*bottom: 0;*/
+        /*right: calc(50% - 70px);*/
     }
     .prev{
         width: 40px;
         height: 40px;
-        top: unset;
-        bottom: 0;
-        left:  calc(50% - 70px);
+        /*top: unset;*/
+        /*bottom: 0;*/
+        /*left:  calc(50% - 70px);*/
     }
+
+
     .slide img {
-        width: 108%;
+        width: 107%;
     }
     .footer{
         height: 280px;
@@ -1403,8 +1469,56 @@
     .howWork-ol {
         margin-left: 10px;
     }
+    .next,
+    .prev{
+        width: 35px;
+        height: 35px;
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .slider svg{
+        width: 14px;
+        height: 14px;
+    }
+}
+@media screen and (max-width: 500px){
+    .white-1 {
+        width: 105%;
+    }
+    .preAbout{
+        height: 250px;
+        padding-top: 25px;
+        padding-left: 45px;
+    }
+    .about-text {
+        max-width: 360px;
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .about-title {
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 425px){
+
+    .white-1 {
+        width: 105%;
+    }
+    .preAbout{
+        height: 250px;
+        padding-top: 40px;
+        padding-left: 45px;
+    }
+    .about-text {
+        max-width: 310px;
+        line-height: 11px;
+        font-size: 11px;
+    }
+    .about-title {
+        font-size: 14px;
+    }
+
     .speaker-1 .speaker-image .linear{
         bottom: -115px !important;
     }
@@ -1424,13 +1538,6 @@
     .header-button,.burger{
         width: 80px;
         font-size: 12px;
-    }
-    .white-1 {
-        width: 300%;
-    }
-    .preAbout {
-        padding-left: 27px;
-        padding-top: 27px;
     }
     .postAbout-item-title {
         font-size: 16px;
@@ -1555,18 +1662,39 @@
         height: 250px;
         padding: 5px 15px;
     }
-    .about-text {
-        max-width: unset;
-        font-size: 10px;
-        line-height: 15px;
-        width: 95%;
-    }
     .video-gif {
         width: 300px;
         height: 300px;
     }
+    .next,
+    .prev{
+        width: 30px;
+        height: 30px;
+    }
+    .slider svg{
+        width: 10px;
+        height: 10px;
+    }
 }
+
 @media screen and (max-width: 375px){
+    .white-1 {
+        width: 107%;
+    }
+    .preAbout{
+        padding-top: 50px;
+        height: 250px;
+    }
+    .about-text {
+        max-width: 270px;
+        line-height: 11px;
+        font-size: 10px;
+    }
+    .about-title {
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+
     .video {
         height: 500px;
     }
@@ -1676,5 +1804,41 @@
     .footer {
         height: 240px;
         padding: 5px 15px;
+    }
+
+
+    .white-1 {
+        width: 105%;
+    }
+    .preAbout{
+        height: 200px;
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    .about-text {
+        max-width: 310px;
+        line-height: 11px;
+        font-size: 10px;
+    }
+    .about-title {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 340px){
+    .white-1 {
+        width: 105%;
+    }
+    .preAbout{
+        height: 200px;
+        padding-top: 25px;
+        padding-left: 25px;
+    }
+    .about-text {
+        max-width: 280px;
+        line-height: 10px;
+        font-size: 10px;
+    }
+    .about-title {
+        font-size: 12px;
     }
 }

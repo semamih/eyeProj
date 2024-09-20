@@ -63,9 +63,9 @@
     </header>
     <main class="main">
         <section class="video">
-            <div class="video-gif">
-<!--                <img src="img/white-22.png" alt="">-->
-            </div>
+            <video class="video-gif" id="video-gif" muted autoplay loop playsinline>
+                <source src="img/eye.mp4" type="video/mp4">
+            </video>
         </section>
         <section class="about">
             <div class="preAbout" id="preAbout">
@@ -84,7 +84,10 @@
                 <img src="img/white-1.webp" alt="" class="white-1">
                 </picture>
             </div>
-            <img src="img/banner.webp" alt="" class="about-banner">
+            <picture>
+                <source srcset="img/baner_mob.jpg" media="(max-width: 768px)">
+                <img src="img/banner.webp" alt="" class="about-banner">
+            </picture>
             <div class="postAbout">
                 <div class="postAbout-items">
                     <div class="postAbout-item">

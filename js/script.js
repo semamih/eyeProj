@@ -129,23 +129,17 @@ closeMenu.onclick = function() {
     header.classList.remove('active-menu');
 }
 
-// function changeImageSrc() {
-//     let img = document.querySelector('.white-1');
-//     if (window.innerWidth < 768) {
-//         img.src = 'img/white-7.png';
-//     } else {
-//         img.src = 'img/white-1.webp';
-//     }
-// }
-//
-// // Проверка при загрузке страницы
-// window.onload = changeImageSrc;
-//
-// // Проверка при изменении размера окна
-// window.onresize = changeImageSrc;
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
 
-
-
+    if (window.scrollY > 100) {
+        // Прокрутка больше 100px: фон полностью непрозрачный
+        header.style.background = 'linear-gradient(90deg, rgba(241, 147, 192, 1) 0%, rgba(223, 177, 218, 1) 25%, rgba(222, 177, 217, 1) 50%, rgba(230, 167, 208, 1) 75%, rgba(213, 188, 228, 1) 100%)';
+    } else {
+        // Прокрутка менее 100px: фон с прозрачностью
+        header.style.background = 'linear-gradient(90deg, rgba(241, 147, 192, 0.65) 0%, rgba(223, 177, 218, 0.65) 25%, rgba(222, 177, 217, 0.65) 50%, rgba(230, 167, 208, 0.65) 75%, rgba(213, 188, 228, 0.65) 100%)';
+    }
+});
 
 
 
